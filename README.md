@@ -22,41 +22,22 @@ The application is composed of the following Features:
 
 - React Router DOM : For routing different pages on the app to different component
 - antd : Antdesign for ready made components such as select and range.
-- graphql & graphql-request : For calling graphql query in the frontend
 - Luxon : Used for date formatting 
-- react-content-loader : For showing dummy skelton up till response fetching from the API
 - react-icons : For component based icons
-- Zustand : State management for react
-
-## Backend
-
-- Developed dummy api from hyGraph
-
-
-
-
-
-
-
-
-
-
-## Screenshots
-
-![All campaigns Screenshot](https://github.com/akki251/zocket-assignment/blob/master/allCampaignsSS.png)
+- useContext : State management for react
 
 ## Run Locally
 
 Clone the project
 
 ```bash
- https://github.com/akki251/zocket-assignment.git
+https://github.com/yashodaAgarwal/Zocket
 ```
 
 Go to the project directory
 
 ```bash
-  cd zocket-assignment
+  cd zocket
 ```
 
 Install dependencies
