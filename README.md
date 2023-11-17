@@ -3,7 +3,7 @@
 
 https://yashoda-zocket-assignment.netlify.app/all
 
-# Ad Campaign based app with filters
+# Ad Campaign app
 
 A app made with react, tailwind.
 
