@@ -70,7 +70,7 @@ const Ready = ({ formData, setFormData }) => {
 
                     <div className="ad_image mt-2 bg-red-200 h-[120px]">
                       <img
-                        src={item.campaignImage.url}
+                        src={item.campaignImage}
                         className="h-full w-full object-cover"
                         alt="cake_image"
                       />

@@ -3,7 +3,7 @@ import React,{useState,useEffect} from "react";
 import { DateTime } from "luxon";
 
 import { BsFacebook } from "react-icons/bs";
-import { FaYoutube } from "react-icons/fa";
+import { FaGoogle, FaInstagram, FaYoutube } from "react-icons/fa";
 import { AiOutlineDelete } from "react-icons/ai";
 import { FiEdit3 } from "react-icons/fi";
 
@@ -45,11 +45,12 @@ const Campaign = ({ data, onDelete }) => {
       <div className="basis-[100px] items-center flex">{data?.location}</div>
       {/* Here I have used only two cases for platform, although we have to revamp all platforms according to api platform response */}
       <div className="basis-[200px] items-center text-center justify-center flex">
-        {data?.platform.startsWith("f") ? (
+        {data?.platform == "FB" ? 
           <BsFacebook color="#1977F3" size={20} />
-        ) : (
-          <FaYoutube color="red" size={20} />
-        )}
+        :
+          data?.platform == "Youtube" ?
+          <FaYoutube color="red" size={20} />:data?.platform == "Google" ?<FaGoogle color="orange" size={20} />:<FaInstagram color="red" size={20}/>
+        }
       </div>
       <div className="basis-[200px] items-center flex">
         <Badge color="success" size="lg" variant="flat">

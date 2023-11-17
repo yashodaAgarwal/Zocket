@@ -16,7 +16,7 @@ const NavBar = () => {
         </div>
         <BsGiftFill color="#1B3F67" />
         <FaBell color="#1B3F67" />
-        <Avatar size="md" src="https://i.pravatar.cc/150?u=a04258114e29026702d" zoomed />
+        <Avatar size="md" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ87KJTvoZmlpQo-zqqQqFPbUXHqBnJt8xDZg&usqp=CAU" zoomed />
         <span>Mukund Cake Shop</span>
         <BsFillCaretDownFill color="#1B3F67" />
         <BsTranslate color="#1B3F67" />

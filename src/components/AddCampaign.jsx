@@ -20,7 +20,7 @@ export const AddCampaign = () => {
   const {state :{steps},action} = useCommonStore((state) => state.steps);
   const [formData,setFormData] = useState({budget: 1500,
     campaignTitle: "",
-    campaign_status: "active",
+    campaign_status: "Active",
     clicks:500,
     endDate: new Date().toISOString(),
     id: "", // Use a unique ID, you can adjust this logic as needed

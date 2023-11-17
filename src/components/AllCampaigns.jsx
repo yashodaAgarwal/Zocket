@@ -5,11 +5,9 @@ import { Input } from "@nextui-org/react";
 import { Select } from "antd";
 import { ImCheckboxUnchecked } from "react-icons/im";
 import Campaign from "./Campaign";
-import Loader from "./Loader";
 import { Link } from "react-router-dom";
 import {useCommonStore} from "../Store/store";
 import { DateTime } from "luxon";
-import { useEffect } from "react";
 
 const AllCampaigns = () => {
   // campaigns data coming from store
@@ -25,7 +23,7 @@ const AllCampaigns = () => {
       setOperativeCampaigns(campaigns);
       return;
     }
-    setOperativeCampaigns(campaigns.filter((campaign) => campaign.platform.startsWith(value[0])));
+    setOperativeCampaigns(campaigns.filter((campaign) => campaign.platform === value));
   };
 
   const onStatusChange = (value) => {
@@ -113,19 +111,19 @@ const AllCampaigns = () => {
                       label: "All platform",
                     },
                     {
-                      value: "google",
+                      value: "Google",
                       label: "Google",
                     },
                     {
-                      value: "fB",
+                      value: "FB",
                       label: "FB",
                     },
                     {
-                      value: "yt",
+                      value: "Youtube",
                       label: "Youtube",
                     },
                     {
-                      value: "ig",
+                      value: "Instagram",
                       label: "Instagram",
                     },
                   ]}
@@ -203,13 +201,11 @@ const AllCampaigns = () => {
           </div>
 
           {/* all campaigns */}
-          {!finalCampaigns ? (
-            <Loader />
-          ) : (
-            finalCampaigns?.map((item) => (
+          
+            {finalCampaigns?.map((item) => (
               <Campaign key={item.id} data={item} onDelete={handleDelete} />
-            ))
-          )}
+            ))}
+          
         </Card.Body>
       </Card>
     </>
