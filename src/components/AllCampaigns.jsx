@@ -14,7 +14,6 @@ import { useEffect } from "react";
 const AllCampaigns = () => {
   // campaigns data coming from store
   const {state,actions} = useCommonStore((state) => state.allCampaigns);
-  console.log(state)
   const campaigns = state.allCampaigns
   const searchInputRef = useRef();
 
